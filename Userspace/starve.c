@@ -12,7 +12,7 @@ void *myThreadFun(void *vargp)
     int i=0;
     while(1)
     {
-        sleep(0.01); 
+//        sleep(0.01); 
         pthread_mutex_lock(&lock);
         short *p = (short *)malloc(sizeof(short));
         pthread_mutex_unlock(&lock); 
